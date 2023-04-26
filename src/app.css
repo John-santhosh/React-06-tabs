@@ -1,0 +1,109 @@
+body > * {
+  background: var(--backgroundColor);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+}
+.container {
+  width: clamp(400px, 80%, 1000px);
+  margin: auto;
+}
+.name {
+  text-transform: uppercase;
+  padding: 5px 10px;
+  background-color: rgb(204, 204, 222);
+  border-radius: 5px;
+}
+
+.duties > * {
+  margin: 1rem 0;
+}
+p {
+  color: rgb(61, 65, 103);
+}
+
+h1 {
+  color: rgb(28, 24, 50);
+}
+.duty {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.icon {
+  color: rgb(42, 196, 196);
+  /* width: 10rem; */
+  font-size: 2.5rem;
+}
+
+.duty p {
+  font-size: 1.01rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.btn-container {
+  text-align: center;
+}
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 3px;
+  margin: 10px;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: all 0.4s;
+  padding: 0;
+  padding-bottom: 5px;
+}
+
+button:hover {
+  border-bottom: 2px solid rgb(42, 196, 196);
+  color: rgb(42, 196, 196);
+}
+
+.active {
+  border-bottom: 2px solid rgb(42, 196, 196);
+  color: rgb(42, 196, 196);
+}
+
+@media only screen and (min-width: 1000px) {
+  .container {
+    display: flex;
+    margin-top: 3rem;
+    gap: 3rem;
+  }
+  h1 {
+    margin: 0 0 2rem;
+  }
+  button {
+    text-align: left;
+    border-left: 2px solid transparent;
+    border-bottom: 0;
+    /* width: 100px; */
+    padding-left: 40px;
+    padding-bottom: 0;
+    margin-bottom: 1rem;
+  }
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+  }
+  button:hover {
+    border-left: 2px solid rgb(42, 196, 196);
+    border-bottom: 0;
+  }
+  .active {
+    border-left: 2px solid rgb(42, 196, 196);
+    border-bottom: 0;
+  }
+}
